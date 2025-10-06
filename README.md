@@ -5,6 +5,12 @@ Possui **painel administrativo** com login, gestão de serviços/produtos e **re
 
 ---
 
+## Observação
+Projeto desenvolvido para fins **pedagógicos** e de **portfólio** .  
+Não destinado a uso comercial ou ambiente de produção.
+
+---
+
 ## Destaques
 - Agendamento rápido com confirmação e atualização de disponibilidade  
 - Painel protegido por login com visão do dia e filtros por profissional/serviço  
