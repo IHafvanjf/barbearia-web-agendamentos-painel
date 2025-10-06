@@ -45,19 +45,18 @@ Possui **painel administrativo** com login, gestão de serviços/produtos e **re
 
 ## Acesse Online
 Demonstração hospedada:  
-[SEU_LINK_DEMO_AQUI](SEU_LINK_DEMO_AQUI)
+[https://slateblue-lion-896979.hostingersite.com](https://slateblue-lion-896979.hostingersite.com)
 
 ---
 
 ## Demonstração
 
 <div align="center">
-  <!-- Substitua pelos seus links (user-attachments do GitHub). 
-       Largura unificada para prints de desktop. -->
-  <img src="LINK_01.png" alt="Home / Seleção de serviço" width="1100">
-  <img src="LINK_02.png" alt="Agendamento / Disponibilidade" width="1100">
-  <img src="LINK_03.png" alt="Painel Administrativo / Agenda do dia" width="1100">
-  <img src="LINK_04.png" alt="Recuperação de senha por e-mail" width="1100">
+  <img src="https://github.com/user-attachments/assets/3cb477cd-56dd-4a9a-9e1a-f404ad712a4e" alt="Home / Hero — CTA Agendar" height="560">
+  <img src="https://github.com/user-attachments/assets/eed350c6-d27f-4986-8fcf-335f48bbe8b7" alt="Nossos Clientes e Avaliações" height="560">
+  <img src="https://github.com/user-attachments/assets/d1d61792-d492-47e2-aaf2-15475c984121" alt="Localização — Google Maps" height="560">
+  <img src="https://github.com/user-attachments/assets/56c4cc18-dd86-415e-b560-7043a70e6a58" alt="Agendamento — Escolha de profissional" height="560">
+  <img src="https://github.com/user-attachments/assets/956815e4-bf2d-4197-a4da-2c2afac2d8ea" alt="Vitrine de Produtos" height="560">
 </div>
 
 ---
