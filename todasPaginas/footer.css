@@ -1,0 +1,245 @@
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+  margin-top: 10vh !important;
+  background: #f8f9fa; 
+  position: relative;
+  color: #333; 
+}
+.footer-cta {
+  border-bottom: 1px solid #ddd; 
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #333; 
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #555;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+  max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #555; 
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #333; 
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #333; 
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg {
+  background: #3B5998;
+}
+.twitter-bg {
+  background: #55ACEE;
+}
+.google-bg {
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-widget ul li {
+  display: block; 
+  margin-bottom: 8px;
+}
+
+.footer-widget ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.footer-widget ul li a:hover {
+  color: #ff5e14;
+}
+
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #ffffff; 
+  border: 1px solid #ccc;
+  color: #333; 
+}
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+
+.copyright-area {
+  background: rgb(163, 162, 162); 
+  padding: 20px 0; 
+  text-align: center;
+  width: 100%; 
+  position: relative; 
+  margin-top: 1vh;
+  padding: 25px 0;
+}
+
+.copyright-text p {
+  margin: 0;
+  margin-left: 2%;
+  font-size: 14px;
+  color: rgb(33, 30, 30); 
+  font-weight: 500;
+
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a {
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #666;
+}
+
+.whatsapp-btn {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.whatsapp-btn a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.whatsapp-btn a i {
+  margin-right: 8px;
+  font-size: 22px;
+}
+
+.whatsapp-btn a:hover {
+  background-color: #1ebe5d;
+}
+
+.dark-mode .footer-section {
+  background: #151414 !important;
+  color: #ffffff !important;
+}
+.dark-mode .footer-cta {
+  border-bottom: 1px solid #373636 !important;
+}
+.dark-mode .cta-text h4 {
+  color: #ffffff !important;
+}
+.dark-mode .cta-text span {
+  color: #aaaaaa !important;
+}
+.dark-mode .footer-text p {
+  color: #bdbdbd !important;
+}
+.dark-mode .footer-widget-heading h3 {
+  color: #ffffff !important;
+}
+.dark-mode .footer-widget ul  p {
+  color: #bbbbbb !important;
+}
+
+.dark-mode .footer-social-icon span {
+  color: #ffffff !important;
+}
+.dark-mode .footer-menu li a {
+  color: #bbbbbb !important;
+}
+.dark-mode .footer-menu li:hover a {
+  color: #02113b !important;
+}
+.dark-mode .copyright-area {
+  background: #202020 !important;
+}
+.dark-mode .copyright-text p {
+  color: #bdbdbd !important;
+}

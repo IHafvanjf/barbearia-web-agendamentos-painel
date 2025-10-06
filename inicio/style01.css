@@ -1,0 +1,224 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(52, 52, 52);
+  overflow-x: hidden;
+}
+
+/* Cabeçalho superior */
+.cabeçalho {
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 5vh;
+  width: 100%;
+  padding: 0 2%;
+
+  background-color: rgb(161, 39, 65);
+}
+
+.cabeçalhoMidias {
+  display: flex;
+  gap: 5px;
+  margin-left: auto;
+}
+
+.iconeInstagram,
+.iconeFacebook {
+  width: 25px;
+  cursor: pointer;
+}
+
+.iconeWhatsapp {
+  width: 8vh;
+  height: 5vh;
+  cursor: pointer;
+  margin-left: -15%;
+}
+
+.txtCabeçalho {
+  flex: 1;
+  color: #fff;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Navegação principal */
+.navegaçao {
+  position: relative;
+  top: 5vh;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+
+  width: 100%;
+  padding: 30px 0;
+  margin-bottom: 30px;
+
+  background-color: rgb(34, 34, 70);
+}
+
+.navegaçao a {
+  flex: 0 1 auto;
+
+  margin: 0 10px;
+
+  color: rgb(253, 253, 253);
+  font-size: 1.2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+
+  cursor: pointer;
+}
+
+/* Seção Equipe / Produtos */
+#tituloEquipe {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ImagemEquipe {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.btn-container {
+  width: 100%;
+  text-align: center;
+}
+
+.open-modal {
+  padding: 10px 20px;
+
+  color: #fff;
+  font-size: 16px;
+
+  background-color: #a12741;
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.open-modal:hover {
+  background-color: #8f2336;
+}
+
+/* Grid responsivo para cartões */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.col {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Banner / carrossel */
+.banner {
+  position: relative;
+  margin-top: 30px;
+}
+
+.carousel-item img {
+  max-height: 500px;
+}
+
+/* Modal acima de outros elementos */
+.modal {
+  z-index: 1050;
+}
+
+/* Elementos diversos */
+#fundoEquipe {
+  width: 100%;
+  height: auto;
+}
+
+#agendarBtn {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#tituloProdutos {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+#produtos .col-md-3 {
+  margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+  background-color: rgb(161, 39, 65);
+  color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 390px) {
+  .txtCabeçalho {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2vh;
+  }
+
+  .iconeInstagram,
+  .iconeFacebook {
+    width: 3vh;
+    margin-left: -0.1vh;
+    cursor: pointer;
+  }
+
+  .iconeWhatsapp {
+    width: 8vh;
+    height: 4vh;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 590px) {
+  .navegaçao a { font-size: 8pt; }
+}
+
+@media (max-width: 390px) {
+  .navegaçao a { font-size: 6pt; }
+}
+
+@media (max-width: 767px) {
+  .list-unstyled { text-align: center; }
+
+  h5 {
+    text-align: center;
+    font-size: 20pt;
+  }
+
+  #logo-Direitos {
+    display: flex;
+    flex-direction: column;
+  }
+}

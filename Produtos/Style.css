@@ -1,0 +1,542 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.light-mode {
+  background: linear-gradient(120deg, #f9f9f9, #e5e5e5); 
+  color: black;
+}
+
+.light-mode .barbershop-card {
+  background: linear-gradient(to bottom right, #ffffff, #e0e0e0); 
+  color: black;
+  border: 1px solid #bbb;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 10vh !important;
+}
+
+.light-mode .barbershop-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Botões */
+.light-mode .barbershop-card .btn-dark {
+  background-color: #444;
+  color: white;
+  border: none;
+}
+
+.light-mode .barbershop-card .btn-dark:hover {
+  background-color: #222;
+}
+
+.light-mode .barbershop-card .btn-primary {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  border: none;
+}
+
+.light-mode .barbershop-card .btn-primary:hover {
+  background: linear-gradient(135deg, #ff6a4d, #fe9e66);
+}
+
+.dark-mode {
+  background-color: rgb(52, 52, 52);
+  color: white;
+}
+
+.dark-mode .barbershop-card {
+  background: linear-gradient(135deg, #1c1c1c, #3e3e3e);
+  color: white;
+  border: 1px solid #444;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .barbershop-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.container1 {
+  
+  position: relative;
+  margin: auto;
+  
+  width: 300px;
+  height: 100px;
+}
+
+.search {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background: gray;
+  border-radius: 50%;
+  transition: all 1s;
+  z-index: 4;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+}
+
+.search::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 22px;
+  right: 0;
+  bottom: 0;
+  left: 22px;
+  width: 12px;
+  height: 2px;
+  background: white;
+  transform: rotate(45deg);
+  transition: all .5s;
+}
+
+.search::after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: -5px;
+  right: 0;
+  bottom: 0;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: all .5s;
+}
+
+.search-bar {
+  font-family: 'Inconsolata', monospace;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: gray !important;
+  color: white;
+  text-shadow: 0 0 10px white;
+  padding: 0 80px 0 20px;
+  border-radius: 30px;
+  box-shadow: inset 0 0 25px 0 rgba(0, 0, 0, 0.5);
+  transition: all 1s;
+  opacity: 0;
+  z-index: 5;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+}
+
+
+input:hover {
+  cursor: pointer;
+}
+
+input:focus {
+  width: 300px;
+  opacity: 1;
+  cursor: text;
+}
+
+input::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+.light-mode .navigation-wrap {
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .navigation-wrap {
+  background-color: rgb(34, 34, 34);
+}
+
+.light-mode #cart {
+  background: white;
+  color: black;
+  border: 1px solid #ddd;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode #cart {
+  background: linear-gradient(135deg, #1c1c1c, #3e3e3e);
+  color: white;
+  border: 1px solid #444;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.light-mode footer {
+  background-color: #ffffff;
+  color: black;
+  border-top: 1px solid #ddd;
+}
+
+.dark-mode footer {
+  background-color: rgb(34, 34, 34);
+  color: white;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html, body {
+width: 100%;
+height: 100%;
+font-family: Helvetica, Arial, sans-serif !important;
+}
+
+
+
+.container1 {
+position: relative;
+margin: auto;
+margin-top: 10vh;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+width: 300px;
+height: 100px;
+.search {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background: gray;
+  border-radius: 50%;
+  transition: all 1s;
+  z-index: 4;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+   box-shadow: 0 0 25px 0 gray;
+  &:hover {
+    cursor: pointer;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 22px;
+    right: 0;
+    bottom: 0;
+    left: 22px;
+    width: 12px;
+    height: 2px;
+    background: white;
+    transform: rotate(45deg);
+    transition: all .5s;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: -5px;
+    right: 0;
+    bottom: 0;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: all .5s;
+  }
+}
+input {
+  font-family: 'Inconsolata', monospace;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: none;
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: gray;
+  color: white;
+  text-shadow: 0 0 10px gray;
+  padding: 0 80px 0 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 25px 0 gray,
+              0 20px 25px 0 rgba(0, 0, 0, 0.2);
+box-shadow: inset 0 0 25px 0 rgba(0, 0, 0, 0.5);
+  transition: all 1s;
+  opacity: 0;
+  z-index: 5;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    width: 300px;
+    opacity: 1;
+    cursor: text;
+  }
+  &:focus ~ .search {
+    right: -250px;
+    background: #151515;
+    z-index: 6;
+    &::before {
+      top: 0;
+      left: 0;
+      width: 25px;
+    }
+    &::after {
+      top: 0;
+      left: 0;
+      width: 25px;
+      height: 2px;
+      border: none;
+      background: white;
+      border-radius: 0%;
+      transform: rotate(-45deg);
+    }
+  }
+  &::placeholder {
+    color: white;
+    opacity: 0.5;
+    font-weight: bolder;
+  }
+}
+}
+
+#TituloProdutos{
+  text-align: center;
+}
+
+/* Garante espaçamento extra na parte inferior dos cards */
+.product-card {
+  margin-bottom: 20px;
+}
+
+/* Ajusta espaçamento no modo escuro */
+.dark-mode .product-card {
+  background: linear-gradient(135deg, #1c1c1c, #3e3e3e);
+  color: white;
+  border: 1px solid #444;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Ajusta o modal para ser visível no Light Mode */
+.modal-content {
+  background-color: #fff; 
+  color: black;
+  border-radius: 12px;
+}
+
+.modal-header {
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-footer {
+  border-top: 1px solid #ddd;
+}
+
+.dark-modal {
+  background-color: #2c2c2c !important;
+  color: white !important;
+  border-radius: 12px;
+}
+
+.dark-modal .modal-header {
+  border-bottom: 1px solid #444 !important;
+}
+
+.dark-modal .modal-footer {
+  border-top: 1px solid #444 !important;
+}
+
+.dark-modal img {
+  border: 2px solid #555;
+}
+
+.modal {
+  z-index: 1050 !important;
+}
+
+.modal-backdrop {
+  z-index: 1040 !important;
+}
+
+.light-mode .btn-primary {
+  position: relative;
+  z-index: 10; 
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  border: none;
+}
+
+.light-mode .btn-primary:hover {
+  background: linear-gradient(135deg, #ff6a4d, #fe9e66);
+  transform: scale(1.05);
+}
+
+.dark-mode .btn-primary {
+  position: relative;
+  z-index: 10;
+  background: linear-gradient(135deg, #3a3a3a, #6b6b6b);
+  color: white;
+  border: none;
+}
+
+.dark-mode .btn-primary:hover {
+  background: linear-gradient(135deg, #2a2a2a, #555);
+  transform: scale(1.05);
+}
+
+.light-mode .barbershop-card {
+  margin-top: 5vh !important;
+}
+
+
+#cart-container {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 350px;
+  background: #fff;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+  display: none; 
+  z-index: 1000;
+}
+
+.dark-mode #cart-container {
+  background: #2c2c2c;
+  color: white;
+}
+
+/* Estiliza os itens do carrinho no Dark Mode */
+.dark-mode #cart-list .list-group-item {
+  background-color: #2c2c2c; 
+  color: white; 
+  border: 1px solid #444; 
+}
+
+.dark-mode #cart-list .list-group-item span {
+  color: white !important;
+}
+
+/* Ajusta a cor do botão no modo escuro */
+.dark-mode #cart-list .btn-danger {
+  background-color: #d9534f; 
+  border: none;
+}
+
+.dark-mode #cart-list .btn-danger:hover {
+  background-color: #c9302c; 
+}
+
+
+.cart-header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.cart-body {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.cart-footer {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.cart-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.cart-total {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dark-mode #client-name {
+  background-color: #444 !important;
+  color: white !important;
+  border: 1px solid #666 !important; 
+  box-shadow: none !important;
+}
+
+#client-name {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dark-mode #client-name {
+  color: white;
+  background-color: #333;
+  border: 1px solid #555;
+}
+
+
+.cart-label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.cart-input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.dark-mode .cart-label {
+  color: #fff;
+}
+
+.dark-mode .cart-input {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}

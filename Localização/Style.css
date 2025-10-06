@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(52, 52, 52);
+    color: white;
+}
+
+.cabeçalho {
+    background-color: rgb(161, 39, 65);
+    display: flex;
+    height: 5vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.cabeçalhoMidias {
+    display: flex;
+    gap: 5px; 
+    margin-left: auto; 
+}
+
+.iconeInstagram,
+.iconeFacebook {
+    width: 25px;
+    cursor: pointer;
+}
+
+.iconeWhatsapp {
+    width: 8vh;
+    cursor: pointer;
+    height: 5vh;
+    margin-left: -15%;
+}
+
+.txtCabeçalho {
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+}
+
+.navegaçao {
+    background-color: rgb(34, 34, 70);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+
+.navegaçao a {
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    font-size: 1.2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    padding: 50px 20px;
+}
+
+h1 {
+
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    
+
+}
+
+p {
+    font-size: 18px;
+}
+
+.map-container {
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 20px; 
+    margin-top: 0;
+}
+
+.map-container iframe {
+    width: 100%; 
+    max-width: 800px; 
+    height: 490px; 
+
+}
+
+footer {
+    background-color: rgb(161, 39, 65);
+    color: white;
+}
+
+@media (max-width: 1110px){
+    .container{
+        top: 10vh;
+    }
+}
+@media (max-width: 530px){
+    .container{
+        top: 16vh;
+    }
+}
+
+@media (max-width: 390px) {
+    .txtCabeçalho {
+        font-size: 2vh;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .iconeInstagram,
+    .iconeFacebook {
+        width: 3vh;
+        cursor: pointer;
+        margin-left:-0.1vh;
+    }
+
+    .iconeWhatsapp {
+        width: 8vh;
+        cursor: pointer;
+        height: 4vh;
+    }
+
+}
+
+@media (max-width: 590px) {
+    .navegaçao a{
+        font-size: 8pt;
+    }
+}
+@media (max-width: 390px) {
+    .navegaçao a{
+        font-size: 6pt;
+    }
+
+} 
+
+@media (max-width: 767px) {
+    .list-unstyled{
+        text-align: center;        
+    }
+
+    h5{
+        text-align: center;
+        font-size: 20pt;
+    }
+
+    #logo-Direitos{
+        display: flex;
+        flex-direction: column;
+    }
+}
