@@ -1,5 +1,7 @@
 # Barbearia Web — Agendamentos, Painel Administrativo e Loja
 
+**Última revisão:** 12-2024
+
 Sistema moderno e responsivo para barbearias com **agendamento online** e atualização de **disponibilidade em tempo real**.  
 Possui **painel administrativo** com login, gestão de serviços/produtos e **recuperação de senha por e-mail**. Suporta **dark mode** para uso confortável em qualquer ambiente.
 
