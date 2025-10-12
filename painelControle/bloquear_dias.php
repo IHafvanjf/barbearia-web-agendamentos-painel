@@ -1,11 +1,6 @@
 <?php
 // Conexão com o banco
 
-$host = 'localhost'; // ou o hostname fornecido pela Hostinger, como 'mysql.hostinger.com'
-$user = 'u953537988_Victor';
-$password = '13579012Victor)';
-$dbname = 'u953537988_barberShop';
-
 // Não é necessário passar a porta se for a padrão (3306)
 $conn = new mysqli($host, $user, $password, $dbname);
 
@@ -33,3 +28,4 @@ foreach ($dias as $dia) {
 
 echo "Dias bloqueados com sucesso!";
 ?>
+
