@@ -1,10 +1,5 @@
 <?php
 
-$host = 'localhost'; // ou o hostname fornecido pela Hostinger, como 'mysql.hostinger.com'
-$user = 'u953537988_Victor';
-$password = '13579012Victor)';
-$dbname = 'u953537988_barberShop';
-
 // Não é necessário passar a porta se for a padrão (3306)
 $conn = new mysqli($host, $user, $password, $dbname);
 
@@ -19,3 +14,4 @@ while ($row = $result->fetch_assoc()) {
 echo json_encode($dias);
 $conn->close();
 ?>
+
